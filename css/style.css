@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap%27');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap%27');
+
+
+		/* Extra centrado vertical*/
+
+
 /** ;
 Las propiedades margin y padding en CSS se utilizan para establecer espacios alrededor de los elementos en una página web. Estos espacios pueden ser utilizados para separar elementos entre sí o para ajustar el tamaño y la forma de los elementos en la página.
 
@@ -73,7 +78,7 @@ Estos valores se aplicarán a todos los elementos con la clase menu en la págin
 .menu {
   
   display: flex;
-  width: 60%;
+  width: 80%;
   justify-content: end;
 
 }
@@ -90,18 +95,20 @@ Estos valores se aplicarán a todos los elementos de anclaje (a) que están dent
 */
 .menu a {
   font-size:25px;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50%;
   margin-left: 50px;
 }
 
 .menu td:hover a{
   font-size:30px ;
+  
+}
+.letras :hover{
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
-
 }
 /** 
 La siguiente regla CSS se aplica a elementos con la clase banner.
@@ -124,17 +131,17 @@ Estos valores se aplicarán a todos los elementos con la clase banner en la pág
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgb(127, 127, 127);
+  
 }
 /** 
 La regla "banner h1" se aplica a un elemento "h1" dentro de "banner" y alinea el texto a la derecha, establece el tamaño de la fuente en 80 píxeles y agrega un relleno de 150 píxeles y 50 píxeles.
 */
 .banner h1 {
-  
+  color: rgb(0, 0, 0);
   align-items: start;
   justify-content: end;
   text-align: right;
-  font-family:"Rubik Gemstones"; 
+  font-family:"Bebas Neue"; 
   font-size: 60px;
   padding: 150px 50px;
 }
@@ -172,7 +179,7 @@ La clase "boton_categorias" se aplica a un elemento "boton_categorias" y estable
 
 */
 .boton_categorias:hover {
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(219,238,238,1) 0%, rgba(253,219,45,0.16299019607843135) 100%);
   opacity: 0.8;
 }
 /** 
@@ -181,7 +188,7 @@ La clase "boton_categorias" se aplica a un elemento "boton_categorias" y estable
 .boton_categorias a {
   text-decoration: none;
   color: black;
-  padding: 5px 5px 5px 5px;
+  padding: 45px;
 }
 /** 
 
@@ -230,9 +237,11 @@ La clase "boton_categorias" se aplica a un elemento "boton_categorias" y estable
 #tour{
   display: flex;
   justify-content: center;
+  /* border: 2px solid;
+  border-color: aqua; */
 }
 .premios h3 {
-  background-color: rgb(209, 205, 199);
+  background: linear-gradient(0deg, rgba(219,238,238,1) 0%, rgba(253,219,45,0.16299019607843135) 100%);
   border: 5px solid rgb(2, 2, 2);
   text-align: center;
   padding: 15px 30px 15px 30px;
@@ -256,4 +265,45 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 100px 70px 100px;
+}
+
+.redes {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+#facebook:hover{
+    background: linear-gradient(90deg, rgba(58,81,180,1) 0%, rgba(29,188,253,0.7988445378151261) 50%, rgba(69,116,252,1) 100%);
+    padding: 0px;
+    border-radius: 20px;
+}
+#instagram:hover{
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,233,0.7204131652661064) 50%, rgba(252,176,69,1) 100%);;
+    padding: 0px;
+    border-radius: 20px;
+}
+#youtube:hover{
+  background: linear-gradient(90deg, rgba(247,4,78,0.9108893557422969) 0%, rgba(164,12,12,0.6391806722689075) 50%, rgba(231,115,115,1) 100%);
+    padding: 0px;
+    border-radius: 20px;
+}
+/* #youtube{
+  width: 80px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+} */
+
+.reset {
+  display: flex;
+  padding: 0px;
+  border-radius: 50%;
+  margin-left: 50px;
+  align-items: center;
+}
+
+#gif{
+  display: flex;
+  justify-content: center;
 }
